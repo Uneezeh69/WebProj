@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts & Crafts Emporium</title>
+
+<link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sue Ellen Francisco' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://mdbootstrap.com/docs/jquery/content/icons-list/">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://mdbootstrap.com/docs/jquery/content/icons-list/">
+    <link href='https://fonts.googleapis.com/css?family=Mystery Quest' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Srisakdi' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+<script>
+
+      
+        let loading_line;
+        window.onload= () => {
+            loading_line = document.getElementById('loading-line');
+        };
+
+        window.onscroll = (e) => {
+            let d_height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let percentage = (window.scrollY / d_height) * 100;
+            loading_line.style.width = percentage + '%';
+        };
+
+        function checkLabel(labelID, input){
+            let label = document.getElementById(labelID);
+            input = input;
+        }
+
+        // Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+$(document).ready(function() {
+  $("#myCarousel").on("slide.bs.carousel", function(e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $(".carousel-item").length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item")
+            .eq(i)
+            .appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item")
+            .eq(0)
+            .appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });
+});
+
+function gotoClay(){
+  location.href = "./clay.html";
+}
+
+function gotowashis(){
+  location.href = "./washis.html";
+}
+
+function gotoPens(){
+  location.href = "./pens.html";
+}
+
+function gotojewels(){
+  location.href = "./jewels.html";
+}
+
+function gotoBooks(){
+  location.href = "./notebooks.html";
+}
+    </script>
+</head>
+<body>
+  
+    <marquee behavior="scroll" direction="left" scrollamount= "5"><b>Free shipping on all orders! Use code UNIRERU</b></marquee>
+    <div class="container-fluid">
+       
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="font-family: srisakdi; text-align: center;">
+                  <img src="https://img.icons8.com/doodle/50/000000/frida-kahlo.png"/>
+                 <b> Arts & Crafts Emporium</b></h1>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+          <a class="navbar-brand" href="#"><img src="pink (1).png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)                
+                </span></a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://img.icons8.com/offices/30/000000/year-of-rabbit.png"/>
+                    Stationary
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Pens</a>
+                    <a class="dropdown-item" href="#">Clay</a>
+                    <a class="dropdown-item" href="#">Daily use items</a>
+                  </div>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="https://img.icons8.com/offices/30/000000/bright-moon.png"/>                    Crafts
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Clay jewellery</a>
+                  <a class="dropdown-item" href="#">Ribbon Action</a>
+                  <a class="dropdown-item" href="#">Custom Orders</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" >About Us</a>
+              </li>
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-style: none;">
+              <img src="https://img.icons8.com/search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Website</button>
+            </form>
+          </div>
+        </nav>
+        
+          <div id="loading-line" class="loading-line"></div>
+
+
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./carosel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 style="font-family: Sue Ellen Francisco;">A wide range of Stationary and craft items!</h1>
+                  <p style="color: black; font-family: Sue Ellen Francisco;">Available right at your doorstep, all just a click away.</p>
+                  <button style="font-family: Indie Flower; border-radius: 22px; border-style: none; color: rgb(253, 71, 132); box-shadow: palevioletred;">Browse More!</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./carosel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 style="font-family: Sue Ellen Francisco;">A wide range of Stationary and craft items!</h1>
+                  <p style="color: black; font-family: Sue Ellen Francisco;">Available right at your doorstep, all just a click away.</p>
+                  <button style="font-family: Indie Flower; border-radius: 22px; border-style: none; color: rgb(253, 71, 132); box-shadow: palevioletred;">Browse More!</button>
+                </div>
+              </div>
+             
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          
+          <!--card carosel-->
+
+          <div class="row">
+            <div class="col-sm-12">
+                <p style="font-size: 30px;">Time until new stock! ^-^</p>
+            </div>
+        </div>
+      <div class="row">
+        <div class="col-sm-12">
+            <p id="demo" style="color: black;"></p>
+        </div>
+      </div>
+      <br>
+     
+      <h1 style="text-align: center; ">
+        <img src="https://img.icons8.com/bubbles/64/000000/fire-element.png"/>
+         DAILY SPECIALS
+        <img src="https://img.icons8.com/bubbles/64/000000/fire-element.png"/>
+      </h1>
+      <br>
+      <!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+ <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+      <div class="row">
+        
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="./2020-04-02 04.37.04 1.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Fall Clutch Pencil <img src="https://img.icons8.com/office/40/000000/leaf.png"/></h2>
+              <p class="card-text">
+                <strike>Rs. 200</strike> Rs. 150/-
+                </p>
+                <div class="midBut">
+                  <a class="btn btn-primary" onclick="gotoPens();">Shop Now! </a>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="./2020-04-02 05.03.03 1.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title" >Pastel Washis <img src="https://img.icons8.com/office/40/000000/ice-cream-bowl.png"/></h2>
+            <p class="card-text">
+              <strike>Rs. 800/-</strike> Rs. 600/-
+            </p>
+            <div class="midBut">
+              <a class="btn btn-primary" onclick="gotowashis();" >Shop Now! </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="./2020-04-02 05.02.37 1.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title">Gold Foil Washi <img src="https://img.icons8.com/offices/40/000000/earring.png"/></h2>
+            <p class="card-text">
+              <strike>Rs. 200</strike> Rs. 150/-
+              </p>
+              <div class="midBut">
+                <a class="btn btn-primary" onclick="gotowashis();" >Shop Now! </a>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="./2020-04-02 04.29.09 1.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title" style="text-align: center;">Airdry Clay <img src="https://img.icons8.com/doodle/48/000000/peas--v1.png"/></h2>
+              <p class="card-text">
+                <strike>Rs. 500/-</strike> Rs. 350/-
+              </p>
+              <div class="midBut">
+                <a class="btn btn-primary" onclick="gotoClay();" >Shop Now! </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="./2020-04-02 04.33.17 1.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title" >Glitter Washis <img src="https://img.icons8.com/doodle/48/000000/star--v1.png"/></h2>
+              <p class="card-text">
+                <strike>Rs. 800/-</strike> Rs. 600/-
+              </p>
+              <div class="midBut">
+                <a class="btn btn-primary" onclick="gotowashis();">Shop Now! </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="./2020-04-02 04.37.04 1.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Fall Clutch Pencil <img src="https://img.icons8.com/office/40/000000/leaf.png"/></h2>
+              <p class="card-text">
+                <strike>Rs. 200</strike> Rs. 150/-
+                </p>
+                <div class="midBut">
+                  <a class="btn btn-primary" onclick="gotoPens();">Shop Now! </a>
+                </div>
+            </div>
+          </div>
+      </div>
+    
+      </div>
+
+
+    </div>
+    <!--/.Second slide-->
+   
+    
+
+  </div>
+  <!--/.Slides-->
+  <div class="controls-bottom" style="text-align: center;">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><img src="https://img.icons8.com/dusk/64/000000/circled-left.png"/></a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; 
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><img src="https://img.icons8.com/dusk/64/000000/circled-right.png"/></a>
+  </div>
+</div>
+<!--/.Carousel Wrapper-->
+<br><hr style="border-width: 10px; color: palevioletred;"><br><br><br>
+
+<h1> <img src="https://img.icons8.com/office/30/000000/cute-pumpkin.png"/> BROWSE BY CATEGORY <img src="https://img.icons8.com/office/30/000000/cute-pumpkin.png"/></h1>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card mb-2">
+      <br>
+      <h2 class="card-title">PENS </h2>
+      <img class="card-img-top"
+        src="./penmain (1).jpg"
+        alt="Card image cap">
+      <div class="card-body">
+          <div class="midBut">
+            <a class="btn btn-primary" onclick="gotoPens();">View More! </a>
+          </div>
+      </div>      
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card mb-2">
+      <br>
+      <h2 class="card-title">NOTEBOOKS
+   </h2>
+      <img class="card-img-top"
+        src="./diarymain (1).jpg"
+        alt="Card image cap">
+      <div class="card-body">
+          <div class="midBut">
+            <a class="btn btn-primary" onclick="gotoBooks();">View More! </a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="col-sm-4">
+    <div class="card mb-2">
+      <br>
+      <h2 class="card-title">WASHI TAPES</h2>
+      <img class="card-img-top"
+        src="./tapemain (2).jpg"
+        alt="Card image cap">
+      <div class="card-body">
+          <div class="midBut">
+            <a class="btn btn-primary" onclick="gotowashis();" >View More! </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr style="border-width: 10px; color: palevioletred;"><br><br><br>
+<h1>Our Customers Love Us! <img src="https://img.icons8.com/office/80/000000/like.png"/>Here is what they have to say.</h1>
+<!--reviews-->
+
+<div class="carousel-reviews broun-block">
+  <div class="container">
+      
+          <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+          
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                   <div class="col-md-4 col-sm-6">
+                     <div class="block-text rel zmin">
+                     <a title="" href="#" style="color: palevioletred;">BEST SHOP EVER!!!!</a>
+                   <div class="mark">My rating: <span class="rating-input">
+                     
+                    <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                    
+                    <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                    
+                    <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                    
+                    <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                   
+                    <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                    
+                  </div>
+                  <p>Everything was so delicately packed and sent with love. I got them for a friend and we both loved it! </p>
+                   <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                   </div>
+               <div class="person-text rel">
+                 <img src="https://img.icons8.com/dusk/64/000000/person-male.png"/>
+                 <a title="" href="#">Mr Daddy</a>
+                 <i>from Glasgow, Scotland</i>
+               </div>
+             </div>
+                   <div class="col-md-4 col-sm-6 hidden-xs">
+                 <div class="block-text rel zmin">
+                     <a title="" href="#" style="color: palevioletred;">So pretty stuff</a>
+                     <div class="mark">My rating: <span class="rating-input">
+                     
+                      <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                    
+                      <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                      
+                      <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                     
+                      <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                      
+                      <img src="https://img.icons8.com/officexs/16/000000/star-half.png"/>
+                    </div>
+                     <p>EEverything was so deleicaately packe dand sent with love. I got them for a friend and we both loved it! </p>
+                       <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                     </div>
+               <div class="person-text rel">
+                <img src="https://img.icons8.com/dusk/64/000000/person-female.png"/>
+                     <a title="" href="#">Koya</a>
+                 <i>United States</i>
+               </div>
+             </div>
+             <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+               <div class="block-text rel zmin">
+                 <a title="" href="#" style="color: palevioletred;">No words, just love </a>
+                 <div class="mark">My rating: <span class="rating-input">
+                     
+                  <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                  
+                  <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                  
+                  <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+                 
+                  <img src="https://img.icons8.com/officexs/16/000000/filled-star.png"/>
+
+                  <img src="https://img.icons8.com/small/16/000000/star.png"/>
+                  
+                </div>
+                <p>EEverything was so deleicaately packe dand sent with love. I got them for a friend and we both loved it! </p>
+                 <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+               </div>
+               <div class="person-text rel">
+                 <img src="https://img.icons8.com/dusk/64/000000/person-male.png"/>
+                 <a title="" href="#">Rannynm</a>
+                 <i>Indonesia</i>
+               </div>
+             </div>
+                  </div>
+                 </div>                                  
+              </div>
+          </div>
+      
+  </div>
+</div>
+
+<div class="row" style="background-color: rgb(253, 196, 248);">
+  <div class="col-md-6 col-lg-6"> <br><br>
+
+    <h1>Connect with Us!</h1>
+    <br>
+    <img src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/> <span style="margin-left: 20px;">www.fedoraArts.facebook.com</span>
+    <br> <br><br>
+    <img src="https://img.icons8.com/doodle/48/000000/instagram.png"/> <span style="margin-left: 20px;">@FedoraTheArtsExplorer</span>
+    <br> <br><br>
+    <img src="https://img.icons8.com/doodle/48/000000/whatsapp.png"/> <span style="margin-left: 20px;">+92 335-4281530</span>
+    
+</div>
+<div class="col-sm-6 col-md-6"> <br><br>
+  <h1>How to Pay</h1>
+  <br>
+  <img src="https://img.icons8.com/bubbles/50/000000/cash-in-hand.png"/> <span style="margin-left: 20px;">Cash on Delivery</span>
+  <br> <br> <br> 
+  <img src="https://img.icons8.com/officel/40/000000/mastercard-credit-card.png"/> <span style="margin-left: 20px;"> Visa/MasterCard</span>
+  <br> <br> <br>
+  <img src="https://img.icons8.com/office/40/000000/money.png"/><span style="margin-left: 20px;">Bank Transfer</span>
+</div>
+</div>
+
+<!--body container ka end-->
+</div>
+    
+</body>
+<style>
+.form-control:focus {
+  border-color: rgb(253, 155, 212);
+  box-shadow: 0 0 8px 0  rgb(248, 180, 237);
+
+  }
+  .loading-line{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 0px;
+        height: 10px;
+        background: rgb(248, 180, 237);
+        box-shadow: 0px 4px 12px rgba(238, 69, 64, 0.15);
+        position: -webkit-sticky;
+  
+    }
+    p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0px;
+  color:  rgb(250, 132, 230);
+}
+button:focus{
+  background-color: rgb(243, 160, 229);
+  color: black;
+}
+h1,h2, p, span{
+  font-family: sue ellen francisco;
+  text-align: center;
+}
+.midBut{
+  text-align: center;
+}
+
+
+
+.carousel-control.left,.carousel-control.right  {background:none;width:25px;}
+.carousel-control.left {left:-25px;}
+.carousel-control.right {right:-25px;}
+.broun-block {
+    background: url("http://myinstantcms.ru/images/bg-broun1.jpg") repeat scroll center top rgba(0, 0, 0, 0);
+    padding-bottom: 34px;
+}
+.block-text {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #2c2222;
+    color: #626262;
+    font-size: 14px;
+    margin-top: 27px;
+    padding: 15px 18px;
+}
+.block-text a {
+ color: #7d4702;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.mark {
+    padding: 12px 0;background:none;
+}
+.block-text p {
+    color: #585858;
+    font-family: Georgia;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.sprite-i-triangle {
+    background-position: 0 -1298px;
+    height: 44px;
+    width: 50px;
+}
+.block-text ins {
+    bottom: -44px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+
+.block {
+    display: block;
+}
+.zmin {
+    z-index: 1;
+}
+.ab {
+    position: absolute;
+}
+
+.person-text {
+    padding: 10px 0 0;
+    text-align: center;
+    z-index: 2;
+}
+.person-text a {
+    color: #ffcc00;
+    display: block;
+    font-size: 14px;
+    margin-top: 3px;
+    text-decoration: underline;
+}
+.person-text i {
+    color: #fff;
+    font-family: Georgia;
+    font-size: 13px;
+}
+.rel {
+    position: relative;
+}
+
+.btn-primary {
+    color: rgb(20, 20, 20);
+    background-color: rgb(255, 187, 209);
+    border-color: rgb(255, 187, 209);
+}
+.btn-primary:hover {
+    color: rgb(243, 236, 236);
+    background-color: #ff99e9;
+    border-color: rgb(255, 187, 209);
+    box-shadow: palevioletred;
+}
+span{
+  font-size: 20px;
+}
+</style>
+</html>
