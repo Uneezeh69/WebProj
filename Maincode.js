@@ -87,7 +87,7 @@ function gotojewels(){
 function gotoBooks(){
   location.href = "./notebooks.html";
 }
-
+////////////********     click wali animation     ***************  */
 const circle = new mojs.Shape({
   left: 0,
   isShowStart: true,
@@ -145,7 +145,7 @@ document.onclick = (e) => {
   bang.replay();
   circle.replay();
 }
-/*
+//// Yaha se physedelic wali animation
  const redCirc = new mojs.Shape({
   left:0, 
   top: 0, 
@@ -297,4 +297,3 @@ document.addEventListener( 'click', function (e) {
     
 
 });
-*/
