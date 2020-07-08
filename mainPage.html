@@ -7,7 +7,7 @@
 
 <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png">
 
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">  
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -51,7 +51,7 @@
 </head>
 <body>
   
-    <marquee behavior="scroll" direction="left" scrollamount= "5"><b>Free shipping on all orders! Use code UNIRERU</b></marquee>
+    <marquee behavior="scroll" direction="left" scrollamount= "5" id="marquee"><b>Free shipping on all orders! Use code UNIRERU</b></marquee>
     <div class="container-fluid">
        
         <div class="row">
@@ -104,8 +104,7 @@
             <form class="form-inline my-2 my-lg-0">
               
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-style: none;">
-              <img src="https://img.icons8.com/search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Website</button>
+              <img src="https://img.icons8.com/material/24/000000/search-for-love.png"/>              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Website</button>
             </form>
           </div>
         </nav>
@@ -144,22 +143,25 @@
           </div>
           
           <!--card carosel-->
-
-          <div class="row">
+          <br><br><br><br>
+          <div class="row" >
             <div class="col-sm-12">
-                <p style="font-size: 30px;">Time until new stock! ^-^</p>
+                <p style="font-size: 30px;" id="demo1">Time until new stock! ^-^</p>
             </div>
         </div>
-      <div class="row">
+      <div class="row" id="demo2">
         <div class="col-sm-12">
             <p id="demo" style="color: black;"></p>
         </div>
       </div>
       <br>
      
+      <br><hr style="border-width: 10px; color: palevioletred;"><br><br><br>
+
+      
       <h1 style="text-align: center; ">
         <img src="https://img.icons8.com/bubbles/64/000000/fire-element.png"/>
-         DAILY SPECIALS
+         <b>DAILY SPECIALS</b>
         <img src="https://img.icons8.com/bubbles/64/000000/fire-element.png"/>
       </h1>
       <br>
@@ -309,7 +311,10 @@
 <!--/.Carousel Wrapper-->
 <br><hr style="border-width: 10px; color: palevioletred;"><br><br><br>
 
-<h1> <img src="https://img.icons8.com/office/30/000000/cute-pumpkin.png"/> BROWSE BY CATEGORY <img src="https://img.icons8.com/office/30/000000/cute-pumpkin.png"/></h1>
+<h1> <img src="https://img.icons8.com/office/30/000000/cute-pumpkin.png"/>
+  <b> BROWSE BY CATEGORY</b>
+    <img src="https://img.icons8.com/office/30/000000/cute-pumpkin.png"/>
+  </h1>
 
 <div class="row">
   <div class="col-sm-4">
@@ -360,7 +365,9 @@
 </div>
 
 <hr style="border-width: 10px; color: palevioletred;"><br><br><br>
-<h1>Our Customers Love Us! <img src="https://img.icons8.com/office/80/000000/like.png"/>Here is what they have to say.</h1>
+<h1><b>Our Customers Love Us! <img src="https://img.icons8.com/office/80/000000/like.png"/
+  >Here is what they have to say.
+</b></h1>
 <!--reviews-->
 
 <div class="carousel-reviews broun-block">
@@ -411,7 +418,7 @@
                       
                       <img src="https://img.icons8.com/officexs/16/000000/star-half.png"/>
                     </div>
-                     <p>EEverything was so deleicaately packe dand sent with love. I got them for a friend and we both loved it! </p>
+                     <p>Everything was so delicately packed and sent with love. I got them for a friend and we both loved it!</p>
                        <ins class="ab zmin sprite sprite-i-triangle block"></ins>
                      </div>
                <div class="person-text rel">
@@ -436,7 +443,7 @@
                   <img src="https://img.icons8.com/small/16/000000/star.png"/>
                   
                 </div>
-                <p>EEverything was so deleicaately packe dand sent with love. I got them for a friend and we both loved it! </p>
+                <p>Everything was so delicately packed and sent with love. I got them for a friend and we both loved it! </p>
                  <ins class="ab zmin sprite sprite-i-triangle block"></ins>
                </div>
                <div class="person-text rel">
@@ -456,7 +463,7 @@
 <div class="row" style="background-color: rgb(253, 196, 248);">
   <div class="col-md-6 col-lg-6"> <br><br>
 
-    <h1>Connect with Us!</h1>
+    <h1><b>Connect with Us!</b></h1>
     <br>
     <img src="https://img.icons8.com/doodle/48/000000/facebook-new.png"/> <span style="margin-left: 20px;">www.fedoraArts.facebook.com</span>
     <br> <br><br>
@@ -466,7 +473,7 @@
     
 </div>
 <div class="col-sm-6 col-md-6"> <br><br>
-  <h1>How to Pay</h1>
+  <h1><b>How to Pay</b></h1>
   <br>
   <img src="https://img.icons8.com/bubbles/50/000000/cash-in-hand.png"/> <span style="margin-left: 20px;">Cash on Delivery</span>
   <br> <br> <br> 
@@ -479,7 +486,26 @@
 <!--body container ka end-->
 </div>
     
+
 </body>
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+  (function () {
+      var options = {
+          whatsapp: "+92 335 4281530", // WhatsApp number
+          snapchat: "uneezeh", // Snapchat username
+          call_to_action: "Get in Touch", // Call to action
+          button_color: "#FF99E9", // Color of button
+          position: "right", // Position may be 'right' or 'left'
+          order: "snapchat, whatsapp", // Order of buttons
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+<!-- /GetButton.io widget -->
 <style>
 
 </style>

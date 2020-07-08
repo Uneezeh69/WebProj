@@ -1,5 +1,6 @@
 
-        let loading_line;
+
+      let loading_line;
         window.onload= () => {
             loading_line = document.getElementById('loading-line');
         };
@@ -87,6 +88,7 @@ function gotojewels(){
 function gotoBooks(){
   location.href = "./notebooks.html";
 }
+
 ////////////********     click wali animation     ***************  */
 const circle = new mojs.Shape({
   left: 0,
