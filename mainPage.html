@@ -50,8 +50,11 @@
 
 </head>
 <body>
-  
-    <marquee behavior="scroll" direction="left" scrollamount= "5" id="marquee"><b>Free shipping on all orders! Use code UNIRERU</b></marquee>
+  <div id="progressBar" class="loading-line"></div>
+  <div id="scrollPath" class="loading-line"></div>
+  <div id="loading-line" class="loading-line"></div>
+
+    <marquee behavior="scroll" direction="right" scrollamount= "5" id="marquee"><b>Free shipping on all orders! Use code UNIRERU</b></marquee>
     <div class="container-fluid">
        
         <div class="row">
@@ -62,7 +65,7 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="#"><img src="pink (1).png" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -104,22 +107,20 @@
             <form class="form-inline my-2 my-lg-0">
               
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-style: none;">
-              <img src="https://img.icons8.com/material/24/000000/search-for-love.png"/>              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Website</button>
+              <img src="https://img.icons8.com/material/24/000000/search-for-love.png"/>       
+              <button class="carBtn" style="font-family: Indie Flower; border-radius: 22px; border-style: none; color: rgb(253, 71, 132); box-shadow: palevioletred;">Browse More!</button>
             </form>
           </div>
         </nav>
-        
-          <div id="loading-line" class="loading-line"></div>
 
-
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" >
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./carosel2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h1 style="font-family: Sue Ellen Francisco;">A wide range of Stationary and craft items!</h1>
                   <p style="color: black; font-family: Sue Ellen Francisco;">Available right at your doorstep, all just a click away.</p>
-                  <button style="font-family: Indie Flower; border-radius: 22px; border-style: none; color: rgb(253, 71, 132); box-shadow: palevioletred;">Browse More!</button>
+                  <button class="carBtn" style="font-family: Indie Flower; border-radius: 22px; border-style: none; color: rgb(253, 71, 132); box-shadow: palevioletred;">Browse More!</button>
                 </div>
               </div>
               <div class="carousel-item">
@@ -297,8 +298,6 @@
 
     </div>
     <!--/.Second slide-->
-   
-    
 
   </div>
   <!--/.Slides-->
@@ -365,17 +364,17 @@
 </div>
 
 <hr style="border-width: 10px; color: palevioletred;"><br><br><br>
-<h1><b>Our Customers Love Us! <img src="https://img.icons8.com/office/80/000000/like.png"/
-  >Here is what they have to say.
+<h1><b>Our Customers Love Us! <img src="https://img.icons8.com/office/80/000000/like.png"/>
+  Here is what they have to say.
 </b></h1>
 <!--reviews-->
 
-<div class="carousel-reviews broun-block">
+<div class="carousel-reviews broun-block" >
   <div class="container">
       
-          <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+          <div id="carousel-reviews" class="carousel slide" data-ride="carousel" >
           
-              <div class="carousel-inner">
+              <div class="carousel-inner" >
                 <div class="item active">
                   <div class="row">
                    <div class="col-md-4 col-sm-6">
@@ -460,7 +459,7 @@
   </div>
 </div>
 
-<div class="row" style="background-color: rgb(253, 196, 248);">
+<div class="row" style="background-color: rgb(253, 196, 248); ">
   <div class="col-md-6 col-lg-6"> <br><br>
 
     <h1><b>Connect with Us!</b></h1>
@@ -486,7 +485,6 @@
 <!--body container ka end-->
 </div>
     
-
 </body>
 <!-- GetButton.io widget -->
 <script type="text/javascript">
