@@ -15,7 +15,7 @@
           z-index: 1;
     
 }
-p {
+p, i {
     text-align: center;
     font-size: 20px;
     margin-top: 0px;
@@ -25,7 +25,7 @@ p {
     background-color: rgb(243, 160, 229);
     color: black;
   }
-  h1,h2, p, span{
+  h1,h2, p, span, i{
     font-family: sue ellen francisco;
     text-align: center;
   }
