@@ -22,6 +22,8 @@ p, i {
     color:  rgb(250, 132, 230);
   }
   button:focus{
+      position: fixed;
+      z-index: 1;
     background-color: rgb(243, 160, 229);
     color: black;
   }
@@ -142,6 +144,8 @@ p, i {
     border-color: #f562e1;
 }
 .carBtn:hover{
+    position: fixed;
+    z-index: 1;
     color: #fff;
     background-color: #0e0c0d;
     border-color: #1d1c1d; 
@@ -156,6 +160,7 @@ p, i {
 }
 .btn-primary{
     
+    z-index: 1;
     background-color: #f563ac !important;
     border-color: #00000000 !important; 
 }

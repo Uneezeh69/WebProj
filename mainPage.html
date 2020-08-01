@@ -486,6 +486,73 @@
 </div>
     
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+<script src= ‘//cdn.jsdelivr.netmojs/0.265.6/mo.min.js’></script>
+<script>
+  console.log(mojs); // is defined
+</script>
+
+<script>
+  const circle = new mojs.Shape({
+  left: 0,
+  isShowStart: true,
+  top: 0,
+  strokeWidth: 8,
+  fill: 'none',
+  radius: 80,
+  scale: {0 :1},
+  opacity: {1 : 0},
+  shape: 'circle',
+  stroke: '#5386E4',
+  duration: 500,
+});
+
+const burst = new mojs.Burst({
+  count: 10,
+  left: 0,
+  isShowStart: true,
+  isShowStart: true,
+  top: 0,
+  children: {
+shape: ['circle', 'polygon', 'rect'],
+fill: ['#6886c5', '#ffe0ac', '#ffacb7'],
+degreeShift: 'rand(-360, 360)',
+delay: 'stagger(0,80)'
+  },
+  duration: 400,
+});
+
+const bang = new mojs.Burst({
+  isShowStart: true,
+  left:0, top:0,
+  radius:{2:40},
+  angle:45,
+  count:8,
+  children:{
+    radius: 8,
+    fill: 'white',
+    scale: {1 : 0, easing:'sin.in'},
+    pathScale: [.7, null],
+    duration: [500, 700],
+    degreeShift: [13, null],
+  }
+});
+
+document.onclick = (e) => {
+  const position = {
+    x: e.pageX,
+    y: e.pageY
+  }
+  circle.tune(position);
+  burst.tune(position);
+  bang.tune(position);
+  burst.replay();
+  bang.replay();
+  circle.replay();
+}
+</script> 
+
 <!-- GetButton.io widget -->
 <script type="text/javascript">
   (function () {
