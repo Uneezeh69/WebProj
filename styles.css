@@ -36,7 +36,7 @@ p, i {
   }
   
   #marquee{
-      background-color: #ff99e9;
+      background-color: #f8a5e6;
   }
   
  
@@ -110,17 +110,6 @@ p, i {
       position: relative;
   }
   
-  .btn-primary {
-      color: rgb(20, 20, 20);
-      background-color: rgb(255, 187, 209);
-      border-color: rgb(255, 187, 209);
-  }
-  .btn-primary:hover {
-      color: rgb(243, 236, 236);
-      background-color: #ff99e9;
-      border-color: rgb(255, 187, 209);
-      box-shadow: palevioletred;
-  }
   span{
     font-size: 20px;
   }
@@ -144,8 +133,8 @@ p, i {
     border-color: #f562e1;
 }
 .carBtn:hover{
-    position: fixed;
-    z-index: 1;
+   
+    
     color: #fff;
     background-color: #0e0c0d;
     border-color: #1d1c1d; 
@@ -160,7 +149,6 @@ p, i {
 }
 .btn-primary{
     
-    z-index: 1;
     background-color: #f563ac !important;
     border-color: #00000000 !important; 
 }
