@@ -89,10 +89,7 @@ function gotoBooks(){
   location.href = "./notebooks.html";
 }
 
-////////////********     click wali animation     ***************  */
-
-
-
+//mo.js animations
 document.addEventListener( 'click', function (e) {
   
    redCirc

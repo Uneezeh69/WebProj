@@ -2,45 +2,45 @@
     border-color: rgb(253, 155, 212);
     box-shadow: 0 0 8px 0  rgb(248, 180, 237);
   
-    }
- .loading-line{
-          position: fixed;
-          left: 0px;
-          top: 0px;
-          width: 0px;
-          height: 10px;
-          background: rgb(245, 93, 187);
-          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.932);
-          position: -webkit-sticky;
-          z-index: 1;
+}
+
+.loading-line{
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 0px;
+      height: 10px;
+      background: rgb(245, 93, 187);
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.932);
+      position: -webkit-sticky;
+      z-index: 1;
     
 }
-p, i {
+
+button:focus{
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(243, 160, 229);
+    color: black;
+}
+
+h1, h2, p, span, i{
+    font-family: sue ellen francisco;
     text-align: center;
     font-size: 20px;
     margin-top: 0px;
     color:  rgb(250, 132, 230);
   }
-  button:focus{
-      position: fixed;
-      z-index: 1;
-    background-color: rgb(243, 160, 229);
-    color: black;
-  }
-  h1,h2, p, span, i{
-    font-family: sue ellen francisco;
+
+.midBut{
     text-align: center;
-  }
-  .midBut{
-    text-align: center;
-  }
+}
   
-  #marquee{
+#marquee{
       background-color: #f8a5e6;
-  }
+}
   
- 
-  .block-text {
+.block-text {
       background-color: #fff;
       border-radius: 5px;
       box-shadow: 0 3px 0 #2c2222;
@@ -48,73 +48,81 @@ p, i {
       font-size: 14px;
       margin-top: 27px;
       padding: 15px 18px;
-  }
-  .block-text a {
-   color: #7d4702;
+}
+
+.block-text a {
+      color: #7d4702;
       font-size: 25px;
       font-weight: bold;
       line-height: 21px;
       text-decoration: none;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  }
-  .mark {
+}
+
+.mark {
       padding: 12px 0;background:none;
-  }
-  .block-text p {
+}
+
+.block-text p {
       color: #585858;
       font-family: Georgia;
       font-style: italic;
       line-height: 20px;
-  }
+}
   
-  .sprite-i-triangle {
+.sprite-i-triangle {
       background-position: 0 -1298px;
       height: 44px;
       width: 50px;
-  }
-  .block-text ins {
+}
+
+.block-text ins {
       bottom: -44px;
       left: 50%;
       margin-left: -60px;
-  }
-  
-  
-  .block {
+}
+
+.block {
       display: block;
-  }
-  .zmin {
+}
+
+.zmin {
       z-index: -1;
-  }
-  .ab {
+}
+
+.ab {
       position: absolute;
-  }
+}
   
-  .person-text {
+.person-text {
       padding: 10px 0 0;
       text-align: center;
       z-index: 2;
-  }
-  .person-text a {
+}
+
+.person-text a {
       color: #ffcc00;
       display: block;
       font-size: 14px;
       margin-top: 3px;
       text-decoration: underline;
-  }
-  .person-text i {
+}
+
+.person-text i {
       color: #fff;
       font-family: Georgia;
       font-size: 13px;
-  }
-  .rel {
-      position: relative;
-  }
-  
-  span{
-    font-size: 20px;
-  }
+}
 
-  #demo2{
+.rel {
+      position: relative;
+}
+  
+span{
+    font-size: 20px;
+}
+
+#demo2{
     font-size:22em ;
 }
 
@@ -127,28 +135,26 @@ p, i {
     z-index: -1;
 }
 
- .carBtn:focus{
+.carBtn:focus{
     color: #fff;
     background-color: #f869e5;
     border-color: #f562e1;
 }
 .carBtn:hover{
-   
-    
     color: #fff;
     background-color: #0e0c0d;
     border-color: #1d1c1d; 
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.932);
 }
-.btn-primary:hover{
-    
+
+.btn-primary:hover{   
     background-color: #be0361 !important;
     border-color: #00000000 !important; 
     color: white !important;
     box-shadow: 0px 4px 12px rgba(1, 1, 1, 0.932) !important;
 }
-.btn-primary{
-    
+
+.btn-primary{  
     background-color: #f563ac !important;
     border-color: #00000000 !important; 
 }
