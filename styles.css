@@ -135,16 +135,25 @@ span{
     z-index: -1;
 }
 
-.carBtn:focus{
-    color: #fff;
-    background-color: #f869e5;
-    border-color: #f562e1;
+.carBtn{
+    background-color: white;
+    border-color: #1d1c1d; 
+   
+    font-family: Indie Flower; 
+    border-radius: 22px; 
+    border-style: none; 
+    color: rgb(253, 71, 132);
 }
 .carBtn:hover{
-    color: #fff;
+    
     background-color: #0e0c0d;
     border-color: #1d1c1d; 
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.932);
+    font-family: Indie Flower; 
+    border-radius: 22px; 
+    border-style: none; 
+    color: rgb(253, 71, 132);
+    
 }
 
 .btn-primary:hover{   

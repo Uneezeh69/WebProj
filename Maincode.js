@@ -90,36 +90,4 @@ function gotoBooks(){
 }
 
 //mo.js animations
-document.addEventListener( 'click', function (e) {
-  
-   redCirc
-    .tune({ x: e.pageX, y: e.pageY,  })
-    .replay();
-  
-     sparks
-    .tune({ x: e.pageX, y: e.pageY  })
-    .replay();
 
-    redSparks
-    .tune({ x: e.pageX, y: e.pageY  })
-    .replay()
-    .generate();
-  
-      triangles
-    .tune({ x: e.pageX, y: e.pageY,})
-    .replay()
-  
-     pentagons
-    .tune({ x: e.pageX, y: e.pageY,})
-    .replay()
-  
-   lines
-    .tune({ x: e.pageX, y: e.pageY,})
-    .replay()
-  
-  redSquares
-    .tune({ x: e.pageX, y: e.pageY,})
-    .replay()
-    
-
-});
